@@ -1,0 +1,363 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+html,body
+{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar
+{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(139, 0, 220));
+}
+.collapse .navbar-nav .nav-item .nav-link
+{
+    color: rgb(250, 250, 250);
+}
+.collapse .navbar-nav .nav-item .nav-link:hover
+{
+    color: #fd7e14;
+}
+.nav-link i
+{
+    color: rgb(250, 250, 250);       
+}
+.nav-link i:hover
+{
+    color: #fd7e14;
+}
+.nav-link.active
+{
+    color: #fd7e14 !important;
+}
+.navbar.navbar-dark .navbar-toggler-icon,
+.navbar-toggler .navbar-toggler-icon
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fafafa' stroke-linecap='sharp' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+#home
+{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    max-width: 100%;
+}
+#home p
+{
+    color: rgb(250, 250, 250);
+}
+#home .nav-link
+{
+    height: 3.125rem; 
+    width: 3.125rem;
+    background: color-mix(in srgb, #fd7e14, transparent 85%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+#home .nav-link:hover
+{
+    background-color: #fd7e14;
+    animation: moveup 0.4s ease forwards;
+}
+@keyframes moveup
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+#home .nav-link i
+{
+    color: rgb(250, 250, 250);
+}
+#home .btn
+{
+    border: 2px solid #fd7e14;
+}
+#home .btn:hover
+{
+    background-color: #fd7e14;
+}
+#about, #experience, #projects, #education, #contact
+{
+    background-color: rgb(15, 15, 15);
+    min-height: 100vh;
+    max-width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+#about .h6, #experience .h6, #projects .h6, #education .h6, #contact .h6
+{
+    color: #fd7e14;
+    font-family: "Oswald", sans-serif;
+}
+#about .line, #experience .line, #projects .line, #education .line, #contact .line
+{
+    width: 2.5rem;
+    border: 1px solid #fd7e14;
+}
+#about .display-3, #experience .display-3, #projects .display-3, #education .display-3, #contact .display-3
+{
+    color: rgb(250, 250, 250);
+}
+.padding-x-axis
+{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+#about .card, #experience .card, #projects .card, #education .card, #contact .card
+{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px 1px color-mix(in srgb, #ff7300, transparent 60%);
+}
+#about .custom-color
+{
+    height: 12.5rem;
+    width: 12.5rem;
+    background-color: #fd7e14;
+    border: 3px solid #fd7e14;
+}
+#about .nav-link
+{
+    height: 3rem; 
+    width: 3rem;
+    background: color-mix(in srgb, #fd7e14, transparent 85%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+#about .nav-link:hover
+{
+    background-color: #fd7e14;
+    animation: moveup 0.4s ease forwards;
+}
+@keyframes moveup
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+#about .btn
+{
+    border: 2px solid #fd7e14;
+}
+#about .btn:hover
+{
+    background-color: #fd7e14;
+}
+#about .about-content
+{
+    font-size: 1.3rem;
+}
+#about .about-content span
+{
+    color: #fd7e14;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;   
+}
+#experience .experience-content
+{
+    font-size: 1.3rem;
+    color: rgb(250, 250, 250);
+    line-height: 1.8;
+}
+#projects .project-link a i
+{
+    font-size: 2.5rem;
+    opacity: 0;
+}
+#projects .projects-content
+{
+    color: rgb(250, 250, 250);
+    line-height: 1.8;
+}
+#projects .progress i
+{
+    font-weight: 800;
+    color: rgb(250, 250, 250);
+}
+#projects .progress
+{
+    height: 1.3rem;
+}
+#projects .progress-bar
+{
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: #fd7e14 !important;
+}
+.project-link i
+{
+    font-size: 5rem;
+    color: rgb(250, 250, 250);
+}
+.project-link i:hover
+{
+    color: #fd7e14;
+    animation: moveup 0.4s ease forwards;
+}
+@keyframes moveup
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
+.project-link
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    text-decoration: none;
+}
+#projects .card:hover .project-link
+{
+    opacity: 1;
+}
+#contact .nav-link
+{
+    height: 3rem; 
+    width: 3rem;
+    background: color-mix(in srgb, #fd7e14, transparent 85%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+#contact .nav-link:hover
+{
+    background-color: #fd7e14;
+    animation: moveup 0.4s ease forwards;
+}
+@keyframes moveup
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+#contact .contact-detail
+{
+    color: rgb(250, 250, 250);
+}
+#contact .contact-detail:hover
+{
+    color: #fd7e14;
+}
+#contact .form-control
+{
+    height: 3rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 250, 250);
+    border: 2px solid rgb(250, 250, 250, 0.5);
+}
+#contact .form-control:focus
+{
+    border: 2px solid #fd7e14;
+    outline: none;
+}
+#contact .form-control-area
+{
+    height: 7rem;
+}
+#contact .form-control::placeholder
+{
+    color: rgb(250, 250, 250);
+    opacity: 0.5;
+}
+#contact .send-message
+{
+    padding: 0rem 2.5rem;
+    color: rgb(250, 250, 250);
+    border: 2px solid #fd7e14;
+}
+#contact .send-message:hover
+{
+    background-color: #fd7e14;
+}
+#status
+{
+    font-size: 15px;
+}
+@media screen and (max-width: 1490px) 
+{
+    #about .about-detail
+    {
+        padding-top: 1rem;
+    }  
+}
+@media screen and (max-width: 1400px) 
+{
+    html
+    {
+        font-size: 90%;
+    }
+    .padding-x-axis
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }  
+}
+@media screen and (max-width: 1255px) 
+{
+    #about .about-detail
+    {
+        padding-top: 1rem;
+    }  
+}
+@media screen and (max-width: 1199px) 
+{
+    #about .about-detail
+    {
+        padding-top: 2rem;
+    }  
+}
+@media screen and (max-width: 1054px) 
+{
+    #about .about-detail
+    {
+        padding-top: 3rem;
+    }  
+}
+@media screen and (max-width: 1024px) 
+{
+    #about .about-detail
+    {
+        padding-top: 2.3rem;
+    }  
+}
+@media screen and (max-width: 768px) 
+{
+    html
+    {
+        font-size: 80%;
+    }  
+}
+@media screen and (max-width: 480px) 
+{
+    html
+    {
+        font-size: 70%;
+    }  
+}
