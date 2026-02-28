@@ -300,6 +300,30 @@ html,body
 {
     font-size: 15px;
 }
+#footer
+{
+    background-color: rgb(15, 15, 15);
+    padding: 15px 0;
+}
+#footer hr
+{
+    border: none;
+    /* border-top: 5px solid red; */
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+}
+#footer .copyright
+{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0;
+}
 @media screen and (max-width: 1490px) 
 {
     #about .about-detail
@@ -342,6 +366,10 @@ html,body
 }
 @media screen and (max-width: 1024px) 
 {
+    #home, #contact
+    {
+        min-height: 75vh;
+    }
     #about .about-detail
     {
         padding-top: 2.3rem;
@@ -352,7 +380,7 @@ html,body
     html
     {
         font-size: 80%;
-    }  
+    }
 }
 @media screen and (max-width: 480px) 
 {
