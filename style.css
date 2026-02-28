@@ -197,6 +197,10 @@ html,body
     font-weight: 700;
     background-color: #fd7e14 !important;
 }
+#projects .toolname
+{
+    color: white;
+}
 .project-link i
 {
     font-size: 5rem;
